@@ -1,0 +1,31 @@
+aml
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blog-posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Pacta LLP" }
+      - { label: "Summary", name: "summary", widget: "text", required: true }
+      - { label: "Body (Content)", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page Updates"
+        file: "index.html"
+        fields:
+          - { label: "Hero Headline", name: "headline", widget: "string" }
+          - { label: "Hero Subtitle", name: "subtitle", widget: "text" }
