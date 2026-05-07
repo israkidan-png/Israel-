@@ -1,31 +1,49 @@
-aml
-
 backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/blog"
-public_folder: "/images/blog"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://pactallp.netlify.app
+display_url: https://pactallp.netlify.app
 
 collections:
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "blog-posts"
+  - name: "insights"
+    label: "Legal Insights & Updates"
+    label_singular: "Legal Insight"
+    folder: "insights"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string", default: "Pacta LLP" }
-      - { label: "Summary", name: "summary", widget: "text", required: true }
-      - { label: "Body (Content)", name: "body", widget: "markdown" }
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - name: "home"
-        label: "Home Page Updates"
-        file: "index.html"
-        fields:
-          - { label: "Hero Headline", name: "headline", widget: "string" }
-          - { label: "Hero Subtitle", name: "subtitle", widget: "text" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+      - label: "Summary"
+        name: "summary"
+        widget: "text"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Corporate Law"
+          - "Capital Markets"
+          - "Investment"
+          - "Tax"
+          - "Compliance"
+          - "Litigation"
+          - "General"
+        default: "General"
