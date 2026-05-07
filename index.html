@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Pacta LLP. Law Firm | Pacta Sunt Servanda | Corporate & Commercial Law Experts in Ethiopia</title>
+    <meta name="description" content="Pacta LLP is a premier corporate law firm in Ethiopia specializing in Corporate Governance, Investment Law, Capital Markets, and Regulatory Compliance. Pacta sunt servanda.">
+    <meta name="keywords" content="Pacta LLP, Ethiopian corporate lawyer, investment advisory Ethiopia, business law, corporate governance, legal consultant Addis Ababa, pacta sunt servanda">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="async"></script>
+    
+    <!-- Tawk.to Live Chat -->
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67e5c8b5ab3a04191a3e012d/1in3v1bh7';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a365d;
+            --primary-dark: #0f2440;
+            --primary-light: #2c5282;
+            --accent: #c4a747;
+            --accent-dark: #a08632;
+            --gray-light: #f7fafc;
+            --gray: #e2e8f0;
+            --gray-dark: #4a5568;
+            --text-dark: #1a202c;
+            --white: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 40px -10px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .logo h1 span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .logo p {
+            font-size: 0.7rem;
+            color: var(--gray-dark);
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: #1a1a2e;
+            color: #eee;
+        }
+
+        body.dark-mode .header,
+        body.dark-mode .practice-card,
+        body.dark-mode .team-card,
+        body.dark-mode .testimonial-card,
+        body.dark-mode .blog-card,
+        body.dark-mode .resource-card,
+        body.dark-mode .contact-form,
+        body.dark-mode .contact-info {
+            background: #16213e;
+            color: #eee;
+        }
+
+        body.dark-mode .hero {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+        }
+
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 999;
+            box-shadow: var(--shadow);
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--accent-dark);
+            transform: translateY(-5px);
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 999;
+            box-shadow: var(--shadow);
+            border: none;
+        }
+
+        .dark-mode-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--gray-light);
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.25rem 1.25rem;
+            max-height: 300px;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            padding: 4rem 0;
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            padding: 0.75rem 1rem;
+            width: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .newsletter-form button {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+        }
+
+        /* Cookie Consent */
+        .cookie-consent {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 12px;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            z-index: 1000;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cookie-consent button {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Search Bar */
+        .search-container {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            padding: 0.75rem 1rem;
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid var(--gray);
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, var(--gray-light) 0%, var(--white) 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero h1 i {
+            font-style: italic;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray-dark);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 2rem;
+            color: var(--accent);
+        }
+
+        .stat p {
+            font-size: 0.9rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--gray-dark);
+            font-size: 1.1rem;
+        }
+
+        .about-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .practice-areas {
+            padding: 5rem 0;
+            background: var(--gray-light);
+        }
+
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .practice-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .practice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .practice-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .practice-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .team-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+            padding-bottom: 1.5rem;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background: var(--primary-light);
+        }
+
+        .team-card h3 {
+            color: var(--primary);
+            margin: 1rem 0 0.25rem;
+            font-size: 1.3rem;
+        }
+
+        .team-title {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .team-bio {
+            padding: 0 1rem;
+            font-size: 0.9rem;
+            color: var(--gray-dark);
+            margin-bottom: 1rem;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .team-social a {
+            color: var(--primary);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .testimonials {
+            padding: 5rem 0;
+            background: var(--gray-light);
+        }
+
+        .testimonial-slider {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .insights {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--gray-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-date {
+            color: var(--accent);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-resources {
+            padding: 5rem 0;
+            background: var(--gray-light);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .resource-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .resource-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .resource-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .resource-card li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-details {
+            margin: 2rem 0;
+        }
+
+        .contact-details p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .contact-details i {
+            color: var(--accent);
+            width: 25px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .calendly-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-about h3, .footer-links h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .legal-notices {
+            margin-bottom: 1rem;
+        }
+
+        .legal-notices a {
+            color: var(--gray);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .disclaimer-note {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: var(--shadow);
+                padding: 2rem;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Pacta <span>LLP.</span></h1>
+                <p>Law Firm | Pacta Sunt Servanda</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Practice Areas</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <span class="hero-badge">Corporate & Commercial Law Experts in Ethiopia</span>
+                    <h1>We will serve you. <i>Pacta sunt servanda.</i></h1>
+                    <p>Business Law • Corporate Governance • Investment Advisory</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Book Consultation <i class="fas fa-arrow-right"></i></a>
+                        <a href="#services" class="btn btn-secondary">Explore Services</a>
+                        <button class="calendly-btn" onclick="Calendly.showPopupWidget('https://calendly.com/pactallp/30min'); return false;">
+                            <i class="fas fa-calendar-alt"></i> Schedule Meeting
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                        <h3>100+</h3>
+                        <p>Clients Served</p>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                        <h3>95%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search practice areas, lawyers, or resources...">
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content" data-aos="fade-up">
+                    <h2>About Pacta LLP.</h2>
+                    <p>Pacta LLP. is a premier law and consulting firm specializing in legal advisory, business law, corporate governance, investment law, taxation, and regulatory compliance. Our team combines academic research and practical legal experience to deliver high-quality legal services to our clients.</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent);">"Pacta sunt servanda" — Agreements must be kept. This principle guides everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Areas -->
+        <section id="services" class="practice-areas">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Legal Services</h2>
+                    <p>Specialized legal expertise across key sectors of Ethiopian business law</p>
+                </div>
+                <div class="practice-grid" id="practiceGrid">
+                    <div class="practice-card searchable" data-name="corporate commercial law company formation governance">
+                        <i class="fas fa-building"></i>
+                        <h3>Corporate & Commercial Law</h3>
+                        <p>Company formation, governance, M&A, and regulatory compliance support.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="practice-card searchable" data-name="capital markets ecma securities ipo">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Capital Markets</h3>
+                        <p>ECMA registration, securities issuance, IPO advisory, and capital raising.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="practice-card searchable" data-name="investment advisory investor business structuring">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Investment Advisory</h3>
+                        <p>Legal guidance for investors, business structuring, and investment incentives.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="practice-card searchable" data-name="contract law drafting negotiation">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>Contract Law</h3>
+                        <p>Drafting, reviewing, and negotiation of commercial agreements.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="practice-card searchable" data-name="tax compliance regulatory">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Tax & Compliance</h3>
+                        <p>Regulatory compliance and tax-related legal advisory services.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                    <div class="practice-card searchable" data-name="litigation dispute resolution arbitration">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Litigation & Resolution</h3>
+                        <p>Commercial arbitration, mediation, and court representation.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Our Legal Team</h2>
+                    <p>Experienced, dedicated, and committed to excellence</p>
+                </div>
+                <div class="team-grid" id="teamGrid">
+                    <div class="team-card searchable" data-name="john smith principal attorney">
+                        <img src="https://placehold.co/400x400/1a365d/white?text=John+Smith" alt="John Smith">
+                        <h3>John Smith</h3>
+                        <p class="team-title">Principal Attorney</p>
+                        <p class="team-bio">LLB, Research Scholar | Specialized in Corporate Governance, Investment Law, and Capital Markets. Founding partner with over 10 years of experience.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:john@pactallp.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card searchable" data-name="adonay elohenu senior associate">
+                        <img src="https://placehold.co/400x400/2c5282/white?text=Adonay+Elohenu" alt="Adonay Elohenu">
+                        <h3>Adonay Elohenu</h3>
+                        <p class="team-title">Senior Associate</p>
+                        <p class="team-bio">LLM in International Business Law | Expert in cross-border transactions, contract negotiation, and foreign investment compliance.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:adonay@pactallp.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card searchable" data-name="eldan cohen associate">
+                        <img src="https://placehold.co/400x400/3a6ea5/white?text=Eldan+Cohen" alt="Eldan Cohen">
+                        <h3>Eldan Cohen</h3>
+                        <p class="team-title">Associate</p>
+                        <p class="team-bio">LLB | Specializes in dispute resolution, commercial litigation, and employment law. Recognized for his analytical approach.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:eldan@pactallp.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Client Testimonials</h2>
+                    <p>What our clients say about working with us</p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Pacta LLP provided exceptional guidance on our company registration and investment structuring. Their commitment to 'pacta sunt servanda' is evident."</p>
+                        <h4>- Tadesse M.</h4>
+                        <span>Managing Director</span>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Professional, responsive, and deeply knowledgeable about Ethiopian corporate law. The entire team at Pacta is outstanding."</p>
+                        <h4>- Selam T.</h4>
+                        <span>General Counsel</span>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The firm's expertise in capital markets and ECMA regulations is unmatched. They guided us through a complex securities registration process."</p>
+                        <h4>- Dr. Yonas A.</h4>
+                        <span>Investor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Answers to common legal questions</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What areas of law do you specialize in?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We specialize in Corporate & Commercial Law, Capital Markets, Investment Advisory, Contract Law, Tax & Compliance, and Litigation & Dispute Resolution.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How can I schedule a consultation?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            You can schedule a consultation by clicking the "Schedule Meeting" button above, using our contact form, or calling us directly at +251-XXX-XXXXXX.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What are your consultation fees?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We offer a free initial 15-minute consultation. For detailed legal advice, our fees vary based on the complexity of the case. Contact us for a quote.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you handle international clients?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we regularly advise international investors and businesses looking to operate in Ethiopia. Our team is fluent in English and experienced with cross-border matters.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How quickly can you respond to my legal matter?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We typically respond within 24 hours. For urgent matters, please call our office directly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h3>Subscribe to Our Legal Insights</h3>
+                <p>Get monthly updates on Ethiopian commercial law changes and legal tips</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Insights/Blog -->
+        <section class="insights">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Legal Insights & Updates</h2>
+                    <p>Stay informed on Ethiopian commercial law changes</p>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-date">March 15, 2026</div>
+                        <h3>ECMA Updates Securities Listing Requirements</h3>
+                        <p>New regulations for capital market participants in Ethiopia's growing exchange.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-date">March 10, 2026</div>
+                        <h3>Corporate Governance Best Practices for 2026</h3>
+                        <p>How Ethiopian companies can strengthen board oversight and compliance.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-date">March 5, 2026</div>
+                        <h3>Foreign Investment in Ethiopia: Legal Guide</h3>
+                        <p>Understanding the new investment proclamation and incentives.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Resources -->
+        <section id="resources" class="legal-resources">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Legal Resources</h2>
+                    <p>Access key legal documents and research materials</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Federal Laws</h3>
+                        <ul>
+                            <li>Federal Proclamations</li>
+                            <li>Regulations</li>
+                            <li>Directives</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card" data-aos="fade-up" data-aos-delay="150">
+                        <h3>Regional State Laws</h3>
+                        <ul>
+                            <li>Regional Proclamations</li>
+                            <li>State Regulations</li>
+                            <li>Directives</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Cassation Decisions</h3>
+                        <ul>
+                            <li>Cassation Bench Rulings</li>
+                            <li>Landmark Decisions</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card" data-aos="fade-up" data-aos-delay="250">
+                        <h3>Research Works</h3>
+                        <ul>
+                            <li>Academic Articles</li>
+                            <li>Legal Research Papers</li>
+                            <li>Theses & Publications</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Legal Updates</h3>
+                        <ul>
+                            <li>New Laws & Amendments</li>
+                            <li>Government Notices</li>
+                            <li>Regulatory Updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with WORKING Form -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2>Contact Pacta LLP.</h2>
+                        <p>Schedule a consultation for your legal needs</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</p>
+                            <p><i class="fas fa-phone"></i> +251-XXX-XXXXXX</p>
+                            <p><i class="fas fa-envelope"></i> info@pactallp.com</p>
+                            <p><i class="far fa-clock"></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                        <a href="https://wa.me/251XXXXXXXXX" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button class="calendly-btn" onclick="Calendly.showPopupWidget('https://calendly.com/pactallp/30min'); return false;" style="margin-left: 1rem;">
+                            <i class="fas fa-calendar-alt"></i> Book Online
+                        </button>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" netlify netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contact">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <input type="tel" name="phone" placeholder="Your Phone Number">
+                            <select name="practiceArea">
+                                <option>Select Practice Area</option>
+                                <option>Corporate & Commercial Law</option>
+                                <option>Investment Advisory</option>
+                                <option>Contract Law</option>
+                                <option>Tax & Compliance</option>
+                                <option>Litigation</option>
+                            </select>
+                            <textarea name="message" rows="5" placeholder="Tell us about your legal matter" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="formStatus" style="margin-top: 1rem; display: none; text-align: center; padding: 0.5rem; border-radius: 8px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Pacta <span style="color: var(--accent);">LLP.</span></h3>
+                    <p>Premier corporate law firm in Ethiopia. <i>Pacta sunt servanda</i> — Agreements must be kept.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Practice Areas</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal Pages</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="#">Legal Guides</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-notices">
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms of Use</a> | 
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+                <p>&copy; 2026 Pacta LLP. Law Firm. All Rights Reserved.</p>
+                <p class="disclaimer-note">This website is for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <span>🍪 This website uses cookies to improve your experience. By using this site, you agree to our use of cookies.</span>
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = darkModeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.querySelector('i').classList.remove('fa-moon');
+            darkModeToggle.querySelector('i').classList.add('fa-sun');
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const parent = question.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchableItems = document.querySelectorAll('.searchable');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            searchableItems.forEach(item => {
+                const text = item.getAttribute('data-name') || item.innerText.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Newsletter Form
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input').value;
+                alert(`Thank you for subscribing! We'll send updates to ${email}`);
+                newsletterForm.reset();
+            });
+        }
+
+        // Contact Form (Netlify will handle submission)
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const submitBtn = contactForm.querySelector('button');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const formData = new FormData(contactForm);
+                try {
+                    await fetch('/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams(formData).toString()
+                    });
+                    formStatus.textContent = '✓ Thank you! We will contact you within 24 hours.';
+                    formStatus.style.display = 'block';
+                    formStatus.style.backgroundColor = '#d4edda';
+                    formStatus.style.color = '#155724';
+                    contactForm.reset();
+                } catch (error) {
+                    formStatus.textContent = '✗ Something went wrong. Please call or email us directly.';
+                    formStatus.style.display = 'block';
+                    formStatus.style.backgroundColor = '#f8d7da';
+                    formStatus.style.color = '#721c24';
+                } finally {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+
+        // Cookie Consent
+        const cookieConsent = document.getElementById('cookieConsent');
+        if (!localStorage.getItem('cookiesAccepted')) {
+            cookieConsent.style.display = 'flex';
+        }
+        document.getElementById('acceptCookies').addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieConsent.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
